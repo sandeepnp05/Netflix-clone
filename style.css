@@ -1,0 +1,231 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+body{
+  background: #00081d;
+  color: #fff;
+  width: 100%;
+
+}
+.header{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.7)),url(Images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 10px 8%;
+  position: relative;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.logo{
+  width: 150px;
+  cursor: pointer;
+}
+nav button{
+  border: 0;
+  outline: 0;
+  background: #db0001;
+  color: #fff;
+  padding: 7px 20px;
+  font-size: 12px;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+
+}
+.language-btn{
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 7px 20px;
+}
+.header-content{
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  transform: translate(-50%,-50%);
+  text-align: left;
+  margin-top: 100px
+
+}
+.header-content h1{
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 600px;
+  max-width: 1550px;
+  margin-bottom: 20px;
+
+}
+.header-content h3{
+  font-size: 26px;
+  font-weight: 800px;
+  margin-bottom: 20px;
+}
+.header-content p{
+font-size: 20px;
+}
+.email-signup{
+  padding: 15px 138px;
+  margin-top: 20px;
+  color: #fff;
+  border-width: .1px;
+  border-color: #fff;
+  border-radius: 4px;
+  font-size: 20px;
+  background-color: #00081d76;
+  
+}
+.submit{
+  background: #db0001;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 15px 30px;
+  border-radius: 4px;
+  margin-left: 4p;
+}
+.features{
+  padding: 50px 12%;
+  font-size: 22px;
+
+}
+.row{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+.text-col{
+  flex-basis: 50%;
+  margin-bottom: 20px;
+}
+.img-col{
+  flex-basis: 50%;
+  margin-bottom: 20px;
+}
+.img-col img{
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+.features h2{
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 20px;                                
+}
+/*---------------------------------faq---------------------------*/
+.faq{
+  padding: 10px 12%;
+  text-align: center;
+  font-size: 18px;
+}
+.faq h2{
+  font-weight: 500;
+  font-size: 40px;
+}
+.accordian{
+  margin: 60px auto;
+  width: 100%;
+  max-width: 1350px;
+  margin-bottom: 20px;
+}
+.accordian li{
+  list-style: none;
+  width:100% ;
+  padding: 5px;
+}
+.accordian li label{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  background: #132144;
+  margin-bottom: 2px;
+  cursor: pointer;
+  position: relative;
+}
+label::after{
+  content: '+';
+  font-size: 34px;
+  position: absolute;
+  right: 20px;
+  transition: transform  0.5s;
+}
+input[type="radio"]{
+  display: none;
+}
+.accordian .content{
+  background: #132144;
+  text-align: left;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition:padding 0.5s;
+}
+.accordian input[type="radio"]:checked+label+.content{
+  max-height:600px;
+  padding:30px 20px;
+}
+.email-singnup-bottom{
+  margin-left: 160px;
+  margin-bottom: 90px;
+}
+.accordian input[type="radio"]:checked+label::after{
+  transform: rotate(135deg);
+}
+/*-----------------------------------footer-------------------------------*/
+.footer{
+  padding: 50px 15% 10px;
+  color: #b2b2b7;
+}
+.footer h2{
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.footer .col{
+  flex-basis: 25%;
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+.footer .col a{
+  display: block;
+  color: #b2b2b7;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.footer .language-btn{
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.copyright-text{
+  font-size: 14px;
+  margin-left:0;
+  color: #b2b2b7;
+}
+hr {
+  width:70%;
+  margin:0 auto;
+  height: 5px;
+  border: 4px solid #2f233c;
+
+}
